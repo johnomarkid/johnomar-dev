@@ -44,6 +44,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           }}
         />
         <footer>
+        <script async data-uid="fb6f1a80af" src="https://artisanal-originator-7951.ck.page/fb6f1a80af/index.js"></script>
           <Bio />
         </footer>
       </article>

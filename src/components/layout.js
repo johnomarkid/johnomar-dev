@@ -1,52 +1,55 @@
 import React from "react"
 import { Link } from "gatsby"
+import Image from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
-  let header
+  const data = useStaticQuery(graphql`
+    query NavQuery {
+      garden: file(absolutePath: { regex: "/garden.png/" }) {
+        childImageSharp {
+          fixed(width: 28, height: 50) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
 
-  if (location.pathname === rootPath) {
-    header = (
-      <h1
+  const header = (
+    <>
+      <Link
         style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
+          boxShadow: `none`,
+          color: `#532Dff`,
         }}
+        to={'/'}
       >
-        <Link
+        <Image
+          fixed={data.garden.childImageSharp.fixed}
+          alt={'garden'}
           style={{
-            boxShadow: `none`,
-            color: `inherit`,
+            marginRight: rhythm(1 / 2),
+            marginBottom: 0,
           }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
+        />
+        <h3
           style={{
-            boxShadow: `none`,
-            color: `inherit`,
+            fontFamily: `'Press Start 2P', cursive`,
+            fontSize: `1.0rem`,
+            marginTop: 0,
+            display: 'inline'
           }}
-          to={`/`}
         >
-          {title}
-        </Link>
-      </h3>
-    )
-  }
+          Your friend John's digital garden
+        </h3>
+      </Link>
+    </>
+  )
+
   return (
     <div
       style={{
@@ -56,12 +59,11 @@ const Layout = ({ location, title, children }) => {
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      <header>{header}</header>
+      <header>
+        {header}
+      </header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
       </footer>
     </div>
   )
