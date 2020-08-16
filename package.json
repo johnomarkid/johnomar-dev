@@ -1,11 +1,10 @@
 {
-  "name": "John Omar digital garden",
-  "private": true,
+  "name": "Digital Garden by John Omar",
   "description": "words by john",
   "version": "0.1.0",
   "author": "John Omar <john.omar@hey.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/johnomarkid/johnomar-dev/issues"
   },
   "dependencies": {
     "gatsby": "^2.24.26",
@@ -46,7 +45,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/johnomarkid/johnomar-dev"
   },
   "scripts": {
     "build": "gatsby build",
