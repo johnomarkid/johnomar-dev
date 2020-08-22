@@ -1,7 +1,7 @@
 ## Development
 
 ```
-gatsby dev
+gatsby develop
 ```
 
 ## Deployment

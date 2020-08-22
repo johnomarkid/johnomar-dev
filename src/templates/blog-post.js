@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Signup from "../components/Signup"
 import { rhythm, scale } from "../utils/typography"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -44,7 +45,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           }}
         />
         <footer>
-        <script async data-uid="fb6f1a80af" src="https://artisanal-originator-7951.ck.page/fb6f1a80af/index.js"></script>
+          <Signup />
           <Bio />
         </footer>
       </article>
