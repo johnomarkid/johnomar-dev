@@ -4,7 +4,7 @@ date: "2020-08-23T22:12:04.284Z"
 description: Learn how to await the result of an async function and then apply additional processing on it in one line of Javascript.
 ---
 
-Have you ever wanted a one-liner that let's you `await` the result of a function and to some further processing?
+Have you ever wanted a one-liner that let's you `await` the result of a function and do some further processing?
 
 Instead of:
 
