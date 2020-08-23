@@ -1,6 +1,6 @@
 ---
 title: Use Fastly with Heroku as an Origin (without the Heroku add-on)
-date: "2020-08-23T22:12:03.284Z"
+date: "2020-08-22T22:12:03.284Z"
 description: Learn how to use Fastly as a CDN in front of a Heroku dyno.
 ---
 
