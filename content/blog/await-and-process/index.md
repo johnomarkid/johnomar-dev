@@ -1,5 +1,5 @@
 ---
-title: Await An Async Function And Do Something With It In One Line of Javascript
+title: Await an Async Function and Do Something with it in One Line of Javascript
 date: "2020-08-23T22:12:04.284Z"
 description: Learn how to await the result of an async function and then apply additional processing on it in one line of Javascript.
 ---

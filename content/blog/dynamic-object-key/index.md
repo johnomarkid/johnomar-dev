@@ -1,5 +1,5 @@
 ---
-title: Set Dynamic Object Keys In ES6 Javascript
+title: Set Dynamic Object Keys in ES6 Javascript
 date: "2020-08-24T22:12:04.284Z"
 description: Object keys in Javascript can be set dynamically with variables. ES6 gives you a way to set the dynamic key in one expression rather than two.
 ---
